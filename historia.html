@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestra Historia</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .container {
+            grid-template-columns: 1fr !important;
+            min-height: 100vh;
+        }
+
+        .left-side {
+            background: linear-gradient(135deg, #f5f1ec 0%, #faf8f5 100%);
+            padding: 100px 80px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .left-content {
+            max-width: 700px;
+        }
+
+        .title {
+            color: #8B0000 !important;
+            font-size: 3.5em !important;
+            margin-bottom: 30px;
+        }
+
+        .subtitle {
+            font-size: 1.3em;
+            color: #5a5a5a;
+            margin-bottom: 50px;
+            letter-spacing: 1px;
+            font-weight: 300;
+        }
+
+        .divider {
+            margin: 0 auto 40px auto;
+            background-color: #8B0000 !important;
+        }
+
+        .text-content {
+            font-size: 1.1em;
+            line-height: 2.1;
+            color: #3a3a3a;
+            text-align: justify;
+        }
+
+        .text-content p {
+            margin-bottom: 25px;
+        }
+
+        .signature {
+            color: #8B0000 !important;
+            font-size: 1.7em !important;
+            margin-top: 50px;
+        }
+
+        .final-message {
+            font-style: italic;
+            color: #6a6a6a;
+            font-size: 1.05em;
+            margin-top: 60px;
+            line-height: 1.8;
+        }
+
+        .right-side {
+            display: none;
+        }
+
+        @media (max-width: 1024px) {
+            .left-side {
+                padding: 80px 60px;
+            }
+
+            .title {
+                font-size: 2.8em;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .left-side {
+                padding: 60px 40px;
+            }
+
+            .title {
+                font-size: 2.2em;
+            }
+
+            .text-content {
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="left-side">
+            <div class="left-content">
+                <h1 class="title">Nuestra Historia</h1>
+                <p class="subtitle">Un capítulo apenas comienza</p>
+                <div class="divider"></div>
+                
+                <div class="text-content">
+                    <p>Mi princesa,</p>
+                    <p>Estas páginas que has visto son solo fragmentos de nuestra historia. Calabazas, museos, ferias, conciertos, luces navideñas... son momentos que atesoro, pero sé que no están todos aquí. Hay risas, desveladas, abrazos, besos, momentos cotidianos que son los más hermosos y muchas otras cosas.</p>
+                    
+                    <p>No puse todas las fotos porque la realidad es que nuestra historia es mucho más grande que cualquier galería. Es en los detalles pequeños, en tus ojitos, tus palabras y  simplemente en tu forma de existir y de ser quien eres.</p>
+                    
+                    <p>Lo más importante es que esto es solo el comienzo. Todavía nos faltan tantos conciertos, tantas ferias, tantos museos. Nos faltan viajes, sorpresas, risas. Esta historia sigue escribiéndose cada día, cada hora, en cada momento que compartimos.</p>
+                    
+                    <p>Gracias por ser la persona que quiero que siga escribiendo este librito conmigo, página tras página, momento tras momento, para siempre.</p>
+                    
+                    <p class="signature">Barbie</p>
+
+                    <p class="final-message">Te amo más hoy que ayer, y menos que mañana.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

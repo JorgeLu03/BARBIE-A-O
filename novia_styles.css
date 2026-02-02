@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #f5f1ec 0%, #fdfbf8 50%, #f5f1ec 100%);
+    font-family: 'Cormorant Garamond', serif;
+    color: #2a2a2a;
+    line-height: 1.8;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 100vh;
+}
+
+.left-side {
+    background: linear-gradient(135deg, #f5f1ec 0%, #faf8f5 100%);
+    padding: 80px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.left-side::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -30%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(119, 136, 153, 0.1) 0%, transparent 70%);
+    border-radius: 50%;
+}
+
+.left-content {
+    position: relative;
+    z-index: 2;
+}
+
+.title {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.2em;
+    font-weight: 700;
+    color: #2F4F4F;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.subtitle {
+    font-size: 1.15em;
+    color: #5a5a5a;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+.divider {
+    width: 50px;
+    height: 3px;
+    background-color: #2F4F4F;
+    margin-bottom: 35px;
+}
+
+.text-content {
+    font-size: 1.05em;
+    line-height: 1.95;
+    color: #3a3a3a;
+}
+
+.text-content p {
+    margin-bottom: 18px;
+}
+
+.text-content p:first-child {
+    font-weight: 600;
+    font-size: 1.15em;
+}
+
+.signature {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5em;
+    color: #2F4F4F;
+    margin-top: 35px;
+    font-weight: 600;
+}
+
+.right-side {
+    background-color: #778899;
+    padding: 80px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.right-side::before {
+    content: '';
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+}
+
+.right-side::after {
+    content: 'EST. 2023';
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    font-size: 0.7em;
+    letter-spacing: 2px;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 300;
+}
+
+.image-container {
+    position: relative;
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 35px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    max-width: 380px;
+    width: 100%;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image-label {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2em;
+    color: #2F4F4F;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 600;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        grid-template-columns: 1fr;
+        min-height: auto;
+    }
+
+    .left-side {
+        padding: 60px 40px;
+        min-height: 50vh;
+    }
+
+    .right-side {
+        padding: 60px 40px;
+        min-height: 50vh;
+    }
+
+    .title {
+        font-size: 2.5em;
+    }
+}
+
+@media (max-width: 768px) {
+    .left-side {
+        padding: 40px 25px;
+    }
+
+    .right-side {
+        padding: 40px 25px;
+    }
+
+    .title {
+        font-size: 2em;
+    }
+
+    .image-container {
+        max-width: 100%;
+        padding: 25px;
+    }
+}
